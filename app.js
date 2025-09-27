@@ -16,7 +16,7 @@ async function searchimages() {
 
     const response = await fetch(url);
     const data = await response.json();
-    const results = data.results;   // ✅ FIXED
+    const results = data.results;  
 
     if (page == 1) {
         searchresults.innerHTML = "";
